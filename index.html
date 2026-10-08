@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Priya | BCA Graduate Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf7f5;--card:#fff;--text:#2a2230;--muted:#6f6577;--accent:#7c3aed;--accent2:#e879a8;--line:#ece5ef;--grad:linear-gradient(135deg,#7c3aed,#e879a8);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15111b;--card:#1f1927;--text:#f1ecf5;--muted:#a79db0;--accent:#a78bfa;--accent2:#f19bc0;--line:#2e2639}}
+:root[data-theme="dark"]{--bg:#15111b;--card:#1f1927;--text:#f1ecf5;--muted:#a79db0;--accent:#a78bfa;--accent2:#f19bc0;--line:#2e2639}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.65}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:1.3rem}
+.logo span{color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;font-size:.9rem;margin-left:18px;font-weight:500}
+nav a:hover{color:var(--accent)}
+.hero{padding:84px 0 70px;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+.tag{display:inline-block;padding:6px 14px;border-radius:99px;background:var(--card);border:1px solid var(--line);font-size:.8rem;color:var(--accent);font-weight:600;letter-spacing:.04em}
+h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.4rem,6vw,3.8rem);line-height:1.1;margin:18px 0 14px}
+h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--muted);font-size:1.08rem;max-width:520px}
+.btns{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 24px;border-radius:12px;text-decoration:none;font-weight:600;font-size:.95rem}
+.btn.p{background:var(--grad);color:#fff;box-shadow:0 8px 24px rgba(124,58,237,.28)}
+.btn.s{border:1.5px solid var(--line);color:var(--text);background:var(--card)}
+.avatar{aspect-ratio:1;max-width:300px;margin:auto;width:100%;border-radius:36% 64% 58% 42%/42% 40% 60% 58%;background:var(--grad);display:grid;place-items:center;font-family:'Playfair Display',Georgia,serif;font-size:7rem;color:#fff;box-shadow:0 20px 50px rgba(124,58,237,.3)}
+section{padding:56px 0}
+.eyebrow{color:var(--accent);font-weight:600;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+h2{font-family:'Playfair Display',Georgia,serif;font-size:2rem;margin:6px 0 26px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.icon{width:44px;height:44px;border-radius:12px;background:var(--grad);display:grid;place-items:center;font-size:1.3rem;margin-bottom:14px}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.edu{display:flex;gap:20px;align-items:flex-start;border-left:4px solid var(--accent)}
+.edu small{color:var(--accent);font-weight:600}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.pills span{padding:7px 14px;border-radius:99px;background:var(--bg);border:1px solid var(--line);font-size:.85rem;font-weight:500}
+.contact{text-align:center;background:var(--grad);color:#fff;border-radius:24px;padding:54px 24px}
+.contact h2{margin-top:0}
+.contact p{opacity:.92;max-width:460px;margin:0 auto 24px}
+.contact a{display:inline-block;background:#fff;color:#7c3aed;padding:13px 28px;border-radius:12px;font-weight:600;text-decoration:none}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:30px 0 40px}
+@media(max-width:720px){.hero{grid-template-columns:1fr;padding-top:48px;text-align:center}.lead{margin:auto}.btns{justify-content:center}.avatar{max-width:200px;font-size:5rem;order:-1}nav a:not(.keep){display:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><div class="logo">Priya<span>.</span></div><div><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a class="keep" href="#contact">Contact</a></div></div></nav>
+
+<main class="wrap">
+<header class="hero">
+<div>
+<span class="tag">BCA GRADUATE</span>
+<h1>Hi, I'm <em>Priya</em>.</h1>
+<p class="lead">A Bachelor of Computer Applications graduate with strong technical foundations and confident, fluent communication, ready to learn, contribute and grow.</p>
+<div class="btns"><a class="btn p" href="#contact">Get in touch</a><a class="btn s" href="#skills">View skills</a></div>
+</div>
+<div class="avatar">P</div>
+</header>
+
+<section id="about">
+<div class="eyebrow">About me</div><h2>Curious, clear and committed</h2>
+<div class="card"><p style="font-size:1.02rem;color:var(--text)">I am a recent BCA graduate from Central Commerce College. I combine a solid grounding in computer applications with the ability to speak fluently and explain ideas clearly. I enjoy turning complex topics into simple conversations, working well with teams, and picking up new skills quickly.</p></div>
+</section>
+
+<section id="education">
+<div class="eyebrow">Education</div><h2>Academic background</h2>
+<div class="card edu"><div class="icon">🎓</div><div><small>COMPLETED</small><h3>Bachelor of Computer Applications (BCA)</h3><p>Central Commerce College</p><div class="pills"><span>Computer fundamentals</span><span>Programming basics</span><span>Databases</span><span>Web technologies</span></div></div></div>
+</section>
+
+<section id="skills">
+<div class="eyebrow">Skills</div><h2>What I bring</h2>
+<div class="grid">
+<div class="card"><div class="icon">🗣️</div><h3>Fluent Communication</h3><p>Confident, clear speaking for presentations, discussions and client or team interactions.</p></div>
+<div class="card"><div class="icon">💻</div><h3>Technical Foundation</h3><p>BCA training in computing concepts, giving me a strong base to build practical skills on.</p></div>
+<div class="card"><div class="icon">🤝</div><h3>Teamwork</h3><p>Collaborative, respectful and dependable when working toward shared goals.</p></div>
+<div class="card"><div class="icon">🌱</div><h3>Quick Learner</h3><p>Eager to learn new tools and adapt to fresh challenges.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact"><h2>Let's connect</h2><p>I am open to internships, entry-level roles and new opportunities. I would love to hear from you.</p><a href="mailto:priya@example.com">Email me</a></div>
+</section>
+</main>
+<footer>© 2026 Priya · BCA Graduate</footer>
+</body>
+</html>
